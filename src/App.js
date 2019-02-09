@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import routes from './routes';
 import './App.css';
+import Link from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -20,6 +22,16 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Link to='/'> 
+          <p>Route 1</p>
+        </Link>
+        <Link to='/2'>
+          <p>Route 1</p>
+        </Link>
+        <Link to='/3'>
+          <p>Route 1</p>
+        </Link>
+        {routes}
       </div>
     );
   }
